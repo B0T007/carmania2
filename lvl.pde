@@ -75,7 +75,7 @@ class Lvl {
     //  gameState = "NEW LEVEL";
     //  time = frameCount;
     //}
-    if(currentLvl.points == 1){
+    if(currentLvl.points == 2){  //ändra siffran för hur många stjärnor för varje lvl
       gameState = "NEW LEVEL";
     }
     

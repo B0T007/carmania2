@@ -47,7 +47,7 @@ void draw() {
     // gameState = "RUN"; 
     //}
     
-    if(currentLvl.points == 1){
+    if(currentLvl.points == 2){  //där man sätter hur många stjärnor tror jag? om det ska vara mer stjärnor för o lvl ändra den här och void run på lvl class
       int lvl = currentLvl.level;
       currentLvl = new Lvl(lvl + 1);
       gameState = "RUN";
