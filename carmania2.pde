@@ -41,10 +41,16 @@ void draw() {
   case "NEW LEVEL":
     background(0);
     
-    if(frameCount - time > 3*frameRate){
-     int lvl = currentLvl.level;
-     currentLvl = new Lvl(lvl + 1);
-     gameState = "RUN"; 
+    //if(frameCount - time > 3*frameRate){
+    // int lvl = currentLvl.level;
+    // currentLvl = new Lvl(lvl + 1);
+    // gameState = "RUN"; 
+    //}
+    
+    if(currentLvl.points == 1){
+      int lvl = currentLvl.level;
+      currentLvl = new Lvl(lvl + 1);
+      gameState = "RUN";
     }
     
     break;

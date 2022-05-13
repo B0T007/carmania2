@@ -28,7 +28,7 @@ class Traffic extends GameObject {
   void render() {
     imageMode(CENTER);
     image(sprite, position.x, position.y);
-    sprite.resize(100, 100);
+    sprite.resize(150, 100);
   }
 
 

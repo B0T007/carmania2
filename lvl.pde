@@ -40,13 +40,13 @@ class Lvl {
 
     vw_image = loadImage("vw.png");
     explosion_image = loadImage("explosion.png");
-    car1 = new Car(new PVector(500, 500), new PVector(0, 0), new PVector(0, 0), vw_image, explosion_image);
+    car1 = new Car(new PVector(900, 500), new PVector(0, 0), new PVector(0, 0), vw_image, explosion_image);
 
     fuel_image = loadImage("jerry.png");
     fuel1 = new Fuel(new PVector(100, 200), new PVector(0, 0), new PVector(0, 0), fuel_image);
 
     star_image = loadImage("star.png");
-    star1 = new Star(new PVector(100, 100), new PVector(2, 2), new PVector(0, 0), star_image);
+    star1 = new Star(new PVector(random(0,1000),random(0,1000)), new PVector(2, 2), new PVector(0, 0), star_image);
 
     traffic_image = loadImage("Traffic.png");
     for (int i = 0; i < traffic1.length; i++) {
@@ -71,10 +71,14 @@ class Lvl {
 
     text(level, 20, 20);
 
-    if (timer1.getTime() > LVL_TIME) {
+    //if (timer1.getTime() > LVL_TIME) {
+    //  gameState = "NEW LEVEL";
+    //  time = frameCount;
+    //}
+    if(currentLvl.points == 1){
       gameState = "NEW LEVEL";
-      time = frameCount;
     }
+    
   }
   
   void points(){
